@@ -68,7 +68,7 @@ jobs:
         with:
           context: src/product-catalog
           file: src/product-catalog/Dockerfile
-          push: tru
+          push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/product-catalog-service:${{ github.run_id }}
   
   deploy:
